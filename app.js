@@ -135,7 +135,7 @@ app.post("/delete", function(req, res){
   const checkedListName = req.body.listName;
   const checkedItemId = req.body.checkbox;
 
-  if(checkedListName==="Today"){
+  if(checkedListName === day){
     del().catch(err => console.log(err));
 
     async function del(){
